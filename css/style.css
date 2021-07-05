@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  min-height: 400px;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.active {
+  background-color: rgba(92, 80, 80, 0.5) !important;
+  border-color: rgba(92, 80, 80, 0.5) !important;
+
+}
+
+.active::before {
+  content: '\2713';
+  padding-right: 5px;
+}
+.list-group-item{
+  background-color: rgba(92, 83, 83, 0.2);
+  color: #fff;
+}
+input{
+  background-color: rgba(92, 83, 83, 0.2) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  outline: none !important;
+
+}
+input::placeholder{
+  color: #fff !important;
+}
+input:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+.btn-addtodo{
+  background-color: rgba(0, 80, 80, 0.7);
+  color: #fff;
+}
+.btn-addtodo:hover{
+  color: #fff;
+}
